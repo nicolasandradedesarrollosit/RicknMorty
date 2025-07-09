@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick&Morty</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Rick & Morty App</h1>
+
+    <form id="filterForm">
+    <input type="text" name="name" placeholder="Nombre"/>
+    <select name="status">
+        <option value="">Estado</option>
+        <option value="alive">Vivo</option>
+        <option value="dead">Muerto</option>
+        <option value="unknown">Desconocido</option>
+    </select>
+    <input type="text" name="species" placeholder="Especie"/>
+    <input type="text" name="type" placeholder="Tipo"/>
+    <select name="gender">
+        <option value="">Género</option>
+        <option value="female">Femenino</option>
+        <option value="male">Masculino</option>
+        <option value="genderless">Agénero</option>
+        <option value="unknown">Desconocido</option>
+    </select>
+    <button type="submit">Filtrar</button>
+    </form>
+
+    <div class="characters" id="charactersContainer">
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
